@@ -1,1 +1,21 @@
-
+work_year,experience_level,employment_type,job_title,salary_in_usd,employee_residence,remote_ratio,company_location,company_size
+2024,Senior,Full-Time,Data Scientist,165000,United States,100,United States,Medium
+2024,Mid,Full-Time,Software Engineer,130000,Germany,50,Germany,Large
+2024,Entry,Full-Time,Data Analyst,75000,United States,0,United States,Medium
+2024,Executive,Full-Time,Machine Learning Engineer,240000,United States,100,United States,Large
+2024,Senior,Full-Time,Data Engineer,180000,United Kingdom,100,United Kingdom,Medium
+2024,Mid,Full-Time,Data Scientist,120000,Canada,100,Canada,Small
+2024,Senior,Full-Time,Software Engineer,195000,United States,0,United States,Large
+2024,Entry,Full-Time,Machine Learning Engineer,95000,Germany,50,Germany,Medium
+2024,Senior,Full-Time,Data Analyst,115000,Canada,100,Canada,Medium
+2024,Mid,Full-Time,Backend Engineer,140000,United States,100,United States,Medium
+2023,Senior,Full-Time,Machine Learning Engineer,210000,United States,100,United States,Large
+2023,Mid,Full-Time,Data Scientist,110000,United Kingdom,0,United Kingdom,Medium
+2023,Entry,Full-Time,Software Engineer,80000,United States,50,United States,Small
+2023,Executive,Full-Time,Data Science Manager,250000,United States,100,United States,Large
+2023,Senior,Full-Time,DevOps Engineer,160000,Germany,100,Germany,Medium
+2023,Mid,Full-Time,Data Engineer,125000,United States,0,United States,Large
+2023,Entry,Full-Time,Data Analyst,68000,Canada,50,Canada,Small
+2023,Senior,Full-Time,Software Engineer,175000,United Kingdom,100,United Kingdom,Medium
+2023,Mid,Full-Time,Machine Learning Engineer,135000,Germany,100,Germany,Large
+2023,Senior,Full-Time,Data Scientist,185000,United States,100,United States,Medium
