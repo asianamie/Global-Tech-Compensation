@@ -17,22 +17,15 @@ st.set_page_config(
 # --- CACHED DATA & MODEL LOADING ---
 @st.cache_data
 def load_data():
-    """Load and preprocess the dataset."""
-    data_path = "salaries_csv"  # Adjust path to match your repository
-    if os.path.exists(data_path):
-        df = pd.read_csv(data_path)
-    else:
-        # Fallback dummy data structure if file path isn't set up yet
-        df = pd.DataFrame({
-            'job_title': ['Data Scientist', 'Software Engineer', 'Data Engineer', 'ML Engineer'],
-            'company_location': ['United States', 'Germany', 'United Kingdom', 'Canada'],
-            'experience_level': ['Entry', 'Mid', 'Senior', 'Executive'],
-            'salary_in_usd': [85000, 120000, 150000, 210000],
-            'work_year': [2023, 2023, 2024, 2024],
-            'remote_ratio': [0, 50, 100, 100],
-            'company_size': ['Small', 'Medium', 'Large', 'Medium']
-        })
-    return df
+    """Load dataset directly from the root directory."""
+    try:
+        # Load the file directly from root
+        df = pd.read_csv("salaries.csv")
+        return df
+    except Exception as e:
+        # If loading fails, display the exact error message on the page
+        st.error(f"Error loading salaries.csv: {e}")
+        return pd.DataFrame()
 
 @st.cache_resource
 def load_model():
