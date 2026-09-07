@@ -32,3 +32,28 @@ C --> D[Window Function Duplicate Tracking]
 D --> E[Calculated Salary Variance Output]
 E --> F[Tableau Executive Dashboard]
 ```
+
+## 🚀 Live Interactive Application & CI/CD Deployment
+
+This repository includes a live, interactive web application built with **Streamlit** and **Plotly** to visualize global tech compensation trends and perform salary estimations.
+
+* **Live Demo:** [Global Tech Compensation Dashboard](https://global-tech-compensation-qcuasyhg43xcyeajq7nmr8.streamlit.app/)
+
+### Web App Architecture & Technical Highlights
+
+* **Automated CI/CD Pipeline:** Integrated directly with GitHub to trigger automatic redeployments to Streamlit Community Cloud upon every commit to `main`.
+* **Resilient Data Ingestion:** Built an explicit data loading pipeline (`load_data()`) in `app.py` with `try-except` exception handling and `st.stop()` circuit-breaker execution guards to prevent cascading app failures.
+* **Optimized In-Memory Caching:** Leveraged `@st.cache_data` decorators to eliminate redundant disk reads, drastically improving visual dashboard rendering times.
+* **Interactive Data Visualization:** Utilized Plotly Express for dynamic filtering, box plot distribution analysis, and regional compensation metrics across various roles and remote setups.
+
+---
+
+## 🛠 Repository Structure
+
+```text
+Global-Tech-Compensation/
+├── app.py                      # Main Streamlit application entry point
+├── salaries.csv                # Core dataset containing compensation metrics
+├── requirements.txt            # Python dependencies for cloud deployment
+├── queries.sql                 # SQL scripts for backend data transformation
+└── README.md                   # Project documentation
