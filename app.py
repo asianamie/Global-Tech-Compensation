@@ -20,7 +20,7 @@ def load_data():
     """Load and preprocess the dataset."""
     data_path = "data/cleaned_tech_salaries.csv"  # Adjust path to match your repository
     if os.path.exists(data_path):
-        df = pd.read_csv(data_path)
+        df = pd.read_csv(salaries.csv)
     else:
         # Fallback dummy data structure if file path isn't set up yet
         df = pd.DataFrame({
