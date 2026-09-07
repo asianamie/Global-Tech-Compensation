@@ -18,9 +18,9 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     """Load and preprocess the dataset."""
-    data_path = "data/cleaned_tech_salaries.csv"  # Adjust path to match your repository
+    data_path = "salaries_csv"  # Adjust path to match your repository
     if os.path.exists(data_path):
-        df = pd.read_csv(salaries.csv)
+        df = pd.read_csv(data_[path)
     else:
         # Fallback dummy data structure if file path isn't set up yet
         df = pd.DataFrame({
